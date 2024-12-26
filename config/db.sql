@@ -1,5 +1,6 @@
-CREATE DATABASE taskflow ;
-USE taskflow ;
+-- Active: 1734599193516@@127.0.0.1@3306@taskflow
+CREATE DATABASE TaskFlow ;
+USE TaskFlow ;
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,  
     username VARCHAR(50) NOT NULL,     
@@ -8,6 +9,9 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP 
 );
+INSERT INTO users (username, password)
+VALUES ('jihane','Bnti1512');
+
 
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,   
